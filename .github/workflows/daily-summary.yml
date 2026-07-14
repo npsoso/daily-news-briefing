@@ -12,7 +12,9 @@ jobs:
   summarize:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
+    env:
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
     steps:
       - uses: actions/checkout@v4
 
