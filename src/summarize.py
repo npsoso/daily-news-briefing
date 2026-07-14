@@ -122,9 +122,9 @@ def prepare_digest(items: list[RawItem]) -> dict:
 def summarize(
     items: list[RawItem],
     api_key: str | None = None,
-    model: str = "deepseek-chat",
+    model: str = "qwen3.6-flash-2026-04-16",
     language: str = "zh",
-    base_url: str = "https://api.deepseek.com",
+    base_url: str = "https://ws-ywg8kc6s0ma5m3se.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
 ) -> str:
     """调用 LLM (DeepSeek / OpenAI 兼容 API) 生成总结。
 
